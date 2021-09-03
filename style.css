@@ -1,0 +1,65 @@
+*,
+**::after,
+**::before {
+    box-sizing: border-box;
+}
+
+:root {
+
+    --ff-primary: 'Red Hat Display', sans-serif;
+    --fw-light: 500;
+    --fw-medium: 700;
+    --fw-bold: 900;
+
+    --pale-blue: hsl(225, 100%, 94%),
+
+    --bright-blue: hsl(245, 75%, 52%),
+
+    --very-pale-blue: hsl(225, 100%, 98%),
+    --sesaturated-blue: hsl(224, 23%, 55%),
+    --dark-blue: hsl(223, 47%, 23%),
+
+    --font-paragraph: 16px;
+
+    --bg-body: linear-gradient(55deg, hsl(225, 100%, 98%), hsl(224, 23%, 65%), hsl(233, 25%, 62%), hsl(243, 25%, 62%), hsl(253, 25%, 52%) );
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: var(--bg-body);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: var(--ff-primary);
+    background-size: 700%;
+    animation: bg-body 20s infinite alternate;
+}
+
+
+@keyframes bg-body {
+    0% {background-position: left;}
+
+    100% {background-position: right;}
+
+}
+
+.container-card{
+ text-align: center;
+ position: relative;
+}
+
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    border: 1px solid black;
+    height: 760px;
+    width: 23.8%;
+    border-radius: 5px;
+    
+}
